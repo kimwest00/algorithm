@@ -8,7 +8,7 @@ using namespace std;
 int main(){
     int month, day, total;
     cin >> month >> day;
-    for(int i=1;i<month<i++){
+    for(int i=1;i<month;i++){
         if(i == 1 || i == 3 || i==5 || i==7 ||i==8||i==10 ||i==12)
             total+=31;
         else if(i == 4 || i == 6 || i==9 || i==11 )
@@ -19,20 +19,20 @@ int main(){
     total += day;
     total %= 7;
     if(total == 0)
-        cout << MON;
+        cout << "MON";
     else if(total == 1)
-        cout << TUE;
+        cout << "TUE";
     else if(total == 2)
-        cout << Wed;
+        cout << "Wed";
     else if(total == 3)
-        cout << Thu;
+        cout << "Thu";
 
     else if(total == 4)
-        cout << Fri;
+        cout << "Fri";
     else if(total == 5)
-        cout << Sat;
+        cout << "Sat";
     else if(total == 6)
-        cout << Sun;
+        cout << "Sun";
 
 
 
