@@ -18,12 +18,28 @@ b=3
 4층  1+ 5 +15 = 21
 
 */
-int live_people(int a, int b){//재귀를 사용함
-/*
+int live_people(int a, int b){}
+    int people[b];
+    for(int i=0;i<b;i++)
+        people[i] = i+1;
+    
+    for(int j=0;j<a;j++){
+        for(int i=0;i<b;i++){
+            if(i>=1)
+                people[i]+=people[i-1];//people[1]=people[0]+2, people[2]=people[1]+3=people[0]+2+3
+    }
+    }
+    return people[b-1];
+  
+    /*
 ex)10층사람
 9층 1+b 필요..
 people이라는 변수에 9층 1,...b호 더해주는거 return
-
+9:1+9:2+9:3+9:4+9:b//밑으로 내려가는 방식은 층마다 공식만드는것과 마찬가지
+=8:1*b+8:2*(b-1)+8:3*(b-2)
+=7:1*(b+b-1+..1)+7:2(b-1+..1)
+=6:1*()
+크기가 b인 배열을 만들어서 1,2,3층..의 사람을 저장
 */
 
 }
