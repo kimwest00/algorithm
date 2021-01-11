@@ -1,3 +1,4 @@
+//출력결과 X
 //BOJ 20126 https://www.acmicpc.net/problem/20126
 #include <iostream>
 using namespace std;
@@ -41,8 +42,8 @@ int main(){
                 cout<<-1<<endl;
                 finish = -1;
                 }
-            if(j==total_time+i)
-                cout<<i<<endl;
+            if(j==total_time+save)
+                cout<<save<<endl;
         }
     
 }
